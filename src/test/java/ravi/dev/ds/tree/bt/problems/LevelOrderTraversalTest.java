@@ -1,4 +1,4 @@
-package ravi.dev.java.ds.tree.bt.problems;
+package ravi.dev.ds.tree.bt.problems;
 
 import org.junit.Test;
 
@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
 public class LevelOrderTraversalTest {
 
@@ -69,9 +69,8 @@ public class LevelOrderTraversalTest {
 
   @Test
   public void testLevelOrderTraversalTestWithNullRootNode() {
-
     LevelOrderTraversal levelOrderTraversal = new LevelOrderTraversal();
-    assertNull(levelOrderTraversal.levelOrderBottom(null));
+    assertTrue(levelOrderTraversal.levelOrderBottom(null).isEmpty());
   }
 
 }
