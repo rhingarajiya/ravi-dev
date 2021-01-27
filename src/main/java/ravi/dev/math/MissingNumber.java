@@ -1,4 +1,4 @@
-package ravi.dev.java.math;
+package ravi.dev.math;
 
 public class MissingNumber {
 
